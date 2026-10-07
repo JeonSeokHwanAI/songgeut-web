@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 열쇠가 든 파일 — 깃에 올리지 않는다
+.env
+.env.local

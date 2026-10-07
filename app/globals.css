@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
+/* 설계 문서 3.0 공통 — 색 · 글자 크기 */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #fbfcfd;
+  --card: #ffffff;
+  --text: #171d23;
+  --muted: #6b7785;
+  --line: #e7ecf1;
+  --accent: #3e6e96;
+  --cancel-bg: #fbf1ee;
+  --cancel-text: #7a4a3f;
+  --cancel-pill: #9c3f2c;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-cancel-bg: var(--cancel-bg);
+  --color-cancel-text: var(--cancel-text);
+  --color-cancel-pill: var(--cancel-pill);
+  --font-sans: var(--font-noto-sans-kr);
+  --font-display: var(--font-gowun-dodum);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
 }
